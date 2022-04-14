@@ -2,7 +2,7 @@ package com.hibernate.crud.onetomany;
 
 import java.util.Set;
 
-public class Student{
+public class Student1{
 	private long student_id;
 	private String student_roll_no;
 	private Set studentFees;
