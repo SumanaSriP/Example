@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	<hibernate-mapping package ="com.hibernate.crud.onetomany">
+	<class name= "StudentFees" table = "student_fees">
+	
+	<id name="student_fees_id" column="iStudentFeeID"><generator class="native"/></id>
+	<property name="student_id" type="long" column="iStudentID" insert ="false" update="false"/>
+	<property name="student_batch_year" type ="integer" column="iStudentBatchYear"/>
+	<property name="student_fees" type="integer" column="iStudentFees"/>
+	
+	
+	
+	</class>
+	</hibernate-mapping>
